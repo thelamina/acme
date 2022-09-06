@@ -1,4 +1,5 @@
 import * as express from 'express';
+import {IBook} from '@acme/shared/models'
 
 const app = express();
 
@@ -7,7 +8,7 @@ app.get('/api', (req, res) => {
 });
 
 app.get('/api/books', (req, res) => {
-  const books: any[] = [
+  const books: IBook[] = [
     {
       id: 1,
       title: 'The Picture of Dorian Gray ',

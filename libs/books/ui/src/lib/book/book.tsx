@@ -1,19 +1,10 @@
 import styled from 'styled-components';
 import { Button } from '@acme/ui';
-
-interface BookType {
-  id: number;
-  title: string;
-  author: string;
-  rating: number;
-  price: number;
-}
-
-export type BookTypePartial = Partial<BookType>;
+import { IBook } from '@acme/shared/models';
 
 export interface BookProps {
-  book: BookTypePartial;
-  onAdd: (book: BookTypePartial) => void;
+  book: IBook;
+  onAdd: (book: IBook) => void;
 }
 
 const StyledBook = styled.div`

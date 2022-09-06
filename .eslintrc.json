@@ -18,7 +18,8 @@
                 "onlyDependOnLibsWithTags": [
                   "type:feature",
                   "type:ui",
-                  "type:util"
+                  "type:util",
+                  "scope:shared"
                 ]
               },
               {
@@ -27,12 +28,17 @@
                   "type:feature",
                   "type:ui",
                   "type:util",
-                  "type:data-access"
+                  "type:data-access",
+                  "scope:shared"
                 ]
               },
               {
                 "sourceTag": "type:ui",
-                "onlyDependOnLibsWithTags": ["type:ui", "type:util"]
+                "onlyDependOnLibsWithTags": [
+                  "type:ui",
+                  "type:util",
+                  "scope:shared"
+                ]
               },
               {
                 "sourceTag": "type:util",
@@ -48,11 +54,23 @@
               },
               {
                 "sourceTag": "scope:books",
-                "onlyDependOnLibsWithTags": ["scope:shared", "scope:books"]
+                "onlyDependOnLibsWithTags": [
+                  "scope:shared",
+                  "scope:books",
+                  "type:ui"
+                ]
               },
               {
                 "sourceTag": "scope:admin",
                 "onlyDependOnLibsWithTags": ["scope:shared", "scope:admin"]
+              },
+              {
+                "sourceTag": "scope:api",
+                "onlyDependOnLibsWithTags": [
+                  "scope:shared",
+                  "scope:api",
+                  "type:models"
+                ]
               },
               {
                 "sourceTag": "scope:shared",
