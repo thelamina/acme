@@ -15,7 +15,10 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@acme/books/data-access": ["libs/books/data-access/src/index.ts"],
       "@acme/books/feature": ["libs/books/feature/src/index.ts"],
+      "@acme/books/ui": ["libs/books/ui/src/index.ts"],
+      "@acme/shared/ui": ["libs/shared/ui/src/index.ts"],
       "@acme/ui": ["libs/ui/src/index.ts"]
     }
   },

@@ -5,6 +5,7 @@ const StyledMain = styled.main`
   padding: 0 1rem;
   width: 100%;
   max-width: 960px;
+  margin: auto;
 `;
 
 export const Main = (props: HTMLAttributes<HTMLElement>) => (
