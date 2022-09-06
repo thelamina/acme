@@ -2,7 +2,9 @@
   "$schema": "./node_modules/nx/schemas/workspace-schema.json",
   "version": 2,
   "projects": {
+    "books-feature": "libs/books/feature",
     "bookstore": "apps/bookstore",
-    "bookstore-e2e": "apps/bookstore-e2e"
+    "bookstore-e2e": "apps/bookstore-e2e",
+    "ui": "libs/ui"
   }
 }
