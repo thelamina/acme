@@ -51,7 +51,8 @@
       "defaultConfiguration": "development",
       "options": {
         "buildTarget": "bookstore:build",
-        "hmr": true
+        "hmr": true,
+        "proxyConfig": "apps/bookstore/proxy.conf.json"
       },
       "configurations": {
         "development": {
