@@ -22,7 +22,6 @@ export const App = () => {
       </Header>
       <Main>
         <Routes>
-          <Route path="/books" element={<BooksFeature />} />
           <Route
             path="/"
             element={
@@ -32,6 +31,7 @@ export const App = () => {
               </div>
             }
           />
+          <Route path="/books" element={<BooksFeature />} />
         </Routes>
       </Main>
     </>

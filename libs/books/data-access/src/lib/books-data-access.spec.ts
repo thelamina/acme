@@ -1,7 +1,8 @@
-import { booksDataAccess } from './books-data-access';
+import { getBooks } from './books-data-access';
 
 describe('booksDataAccess', () => {
-  it('should work', () => {
-    expect(booksDataAccess()).toEqual('books-data-access');
+  it('should return list of Books', async () => {
+    const res = await getBooks();
+    expect(res).toBeTruthy();
   });
 });

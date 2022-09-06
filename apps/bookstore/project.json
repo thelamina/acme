@@ -79,5 +79,5 @@
       }
     }
   },
-  "tags": []
+  "tags": ["type:app", "scope:bookstore"]
 }

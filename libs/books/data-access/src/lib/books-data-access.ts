@@ -1,12 +1,12 @@
-type Book = {
+interface BookType {
   id: number;
   title: string;
   author: string;
   rating: number;
   price: number;
-};
+}
 
-export async function getBooks(): Promise<Book[]> {
+export const getBooks = async (): Promise<BookType[]> => {
   // TODO: We'll wire this up to an actual API later.
   // For now we are just returning some fixtures.
   return [
@@ -46,4 +46,4 @@ export async function getBooks(): Promise<Book[]> {
       price: 12.85,
     },
   ];
-}
+};

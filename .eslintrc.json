@@ -26,7 +26,8 @@
                 "onlyDependOnLibsWithTags": [
                   "type:feature",
                   "type:ui",
-                  "type:util"
+                  "type:util",
+                  "type:data-access"
                 ]
               },
               {
@@ -36,6 +37,14 @@
               {
                 "sourceTag": "type:util",
                 "onlyDependOnLibsWithTags": ["type:util"]
+              },
+              {
+                "sourceTag": "scope:ui",
+                "onlyDependOnLibsWithTags": [
+                  "scope:ui",
+                  "scope:shared",
+                  "type:ui"
+                ]
               },
               {
                 "sourceTag": "scope:books",
