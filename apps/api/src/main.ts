@@ -1,5 +1,6 @@
 import * as express from 'express';
 import { IBook, ICart } from '@acme/shared/models';
+import path = require('path');
 
 const app = express();
 
@@ -58,6 +59,13 @@ const port = process.env.port || 3333;
 
 const server = app.listen(port, () => {
   console.log(`Listening at http://localhost:${port}/api`);
+});
+
+// Serve built frontend app
+app.use(express.static(path.join(__dirname, '../bookstore')));
+// Handle browser-side routes
+app.get('*', function (req, res) {
+  res.sendFile('index.html', { root: path.join(__dirname, '../bookstore') });
 });
 
 server.on('error', console.error);
