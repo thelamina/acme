@@ -1,5 +1,5 @@
 import * as express from 'express';
-import {IBook} from '@acme/shared/models'
+import { IBook, ICart } from '@acme/shared/models';
 
 const app = express();
 
@@ -46,6 +46,12 @@ app.get('/api/books', (req, res) => {
     },
   ];
   res.send(books);
+});
+
+app.post('/api/checkout', (req, res) => {
+  const cart: ICart = req.body;
+  console.log('Checking out...', JSON.stringify(cart, null, 2));
+  res.send({ order: '12345678' });
 });
 
 const port = process.env.port || 3333;

@@ -1,8 +1,7 @@
 /* eslint-disable */
 export default {
-  displayName: 'ui',
-  preset: '../../jest.preset.js',
-  // moduleDirectories: ['src'],
+  displayName: 'cart-feature',
+  preset: '../../../jest.preset.js',
   // transform: {
   //   '^.+\\.[tj]sx?$': 'babel-jest',
   // },
@@ -11,6 +10,5 @@ export default {
     '^.+\\.[tj]sx?$': ['babel-jest', { presets: ['@nrwl/react/babel'] }],
   },
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
-
-  coverageDirectory: '../../coverage/libs/ui',
+  coverageDirectory: '../../../coverage/libs/cart/feature',
 };

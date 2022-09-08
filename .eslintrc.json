@@ -45,6 +45,10 @@
                 "onlyDependOnLibsWithTags": ["type:util"]
               },
               {
+                "sourceTag": "type:data-access",
+                "onlyDependOnLibsWithTags": ["type:data-access", "scope:shared"]
+              },
+              {
                 "sourceTag": "scope:ui",
                 "onlyDependOnLibsWithTags": [
                   "scope:ui",

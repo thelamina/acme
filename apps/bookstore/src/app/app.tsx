@@ -1,5 +1,6 @@
 import { Route, Routes, Link } from 'react-router-dom';
 import { BooksFeature } from '@acme/books/feature';
+import { CartFeature } from '@acme/cart/feature';
 import {
   GlobalStyles,
   Header,
@@ -18,6 +19,9 @@ export const App = () => {
           <NavigationItem>
             <Link to="/books">Books</Link>
           </NavigationItem>
+          <NavigationItem>
+            <Link to="/cart">Cart</Link>
+          </NavigationItem>
         </NavigationList>
       </Header>
       <Main>
@@ -32,6 +36,7 @@ export const App = () => {
             }
           />
           <Route path="/books" element={<BooksFeature />} />
+          <Route path="/cart" element={<CartFeature />} />
         </Routes>
       </Main>
     </>
